@@ -1,7 +1,8 @@
 In this tutorial, we'll see how to use LlamaIndex Instrumentation module to send intermediate steps in a RAG pipeline to the frontend for an intuitive user experience.
 
 
-![arch](https://github.com/rsrohan99/rag-stream-intermediate-events-tutorial/assets/62835870/e981ab13-0262-4869-b3a0-99aaf89e0b36)
+![arch](https://github.com/rsrohan99/rag-stream-intermediate-events-tutorial/assets/62835870/46aecce8-3fdb-46b3-8e33-5bad089c9371)
+
 
 We use Server-Sent Events which will be recieved by Vercel AI SDK on the frontend.
 
