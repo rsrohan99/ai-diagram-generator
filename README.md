@@ -25,7 +25,13 @@ cd rag-stream-intermediate-events-tutorial
 cd backend
 ```
 
-### First set the OpenAI key in .env
+### First create `.env` from `.env.example`
+
+```bash
+cp .env.example .env
+```
+
+### Set the OpenAI key in .env
 
 ```bash
 OPENAI_API_KEY=****
@@ -55,6 +61,12 @@ poetry run python main.py
 
 ```bash
 cd frontend
+```
+
+### First create `.env` from `.env.example`
+
+```bash
+cp .env.example .env
 ```
 
 ### Install the dependencies
