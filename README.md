@@ -12,9 +12,9 @@ We use Server-Sent Events which will be recieved by Vercel AI SDK on the fronten
 First clone the repo:
 
 ```bash
-$ git clone https://github.com/rsrohan99/rag-stream-intermediate-events-tutorial.git
+git clone https://github.com/rsrohan99/rag-stream-intermediate-events-tutorial.git
 
-$ cd rag-stream-intermediate-events-tutorial
+cd rag-stream-intermediate-events-tutorial
 ```
 
 ## Start the Backend
@@ -22,7 +22,7 @@ $ cd rag-stream-intermediate-events-tutorial
 `cd` into the `backend` directory
 
 ```bash
-$ cd backend
+cd backend
 ```
 
 ### First set the OpenAI key in .env
@@ -34,19 +34,19 @@ OPENAI_API_KEY=****
 ### Install the dependencies
 
 ```bash
-$ poetry install
+poetry install
 ```
 
 ### Generate the Index for the first time
 
 ```bash
-$ poetry run python app/engine/generate.py
+poetry run python app/engine/generate.py
 ```
 
 ### Start the backend server
 
 ```bash
-$ poetry run python main.py
+poetry run python main.py
 ```
 
 ## Start the Frontend
@@ -54,17 +54,17 @@ $ poetry run python main.py
 `cd` into the `frontend` directory
 
 ```bash
-$ cd frontend
+cd frontend
 ```
 
 ### Install the dependencies
 
 ```bash
-$ bun i
+npm i
 ```
 
 ### Start the frontend server
 
 ```bash
-$ bun run dev
+npm run dev
 ```
