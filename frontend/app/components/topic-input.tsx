@@ -26,7 +26,7 @@ const TopicInput: React.FC<TopicInputProps> = ({
       <input
         className="rounded-lg p-2 w-[50vw] text-sm"
         id="topic"
-        placeholder="Topic e.g. Operating system architecture, push notification system etc."
+        placeholder="Topic e.g. Photosynthesis, push notification system etc."
         type="text"
         value={input}
         onChange={handleInputChange}

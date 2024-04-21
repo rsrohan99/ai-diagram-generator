@@ -1,11 +1,6 @@
-In this tutorial, we'll see how to use LlamaIndex Instrumentation module to send intermediate steps in a RAG pipeline to the frontend for an intuitive user experience.
+In this tutorial, we'll see how to use LlamaIndex Pydantic Program mode and partial object parsing to send intermediate pydantic objects from incomplete JSONs to the frontend for an intuitive user experience.
 
-Full video tutorial under 3 minutes 🔥👇
-
-[![Stream Intermediate events in RAG](https://img.youtube.com/vi/JOM8WgmNCvI/maxresdefault.jpg)](https://www.youtube.com/watch?v=JOM8WgmNCvI)
-
-
-We use Server-Sent Events which will be recieved by Vercel AI SDK on the frontend.
+We use LlamaIndex Pydantic Program mode for structured output generation and we use partial object parsing to send intermediate objects that are validated using Pydantic models to the frontend.
 
 ## Getting Started
 
@@ -41,12 +36,6 @@ OPENAI_API_KEY=****
 
 ```bash
 poetry install
-```
-
-### Generate the Index for the first time
-
-```bash
-poetry run python app/engine/generate.py
 ```
 
 ### Start the backend server

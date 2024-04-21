@@ -39,7 +39,7 @@ const DiagramVis: React.FC<GraphProps> = ({ diagram: graph }) => {
     },
     physics: {
       repulsion: {
-        nodeDistance: 80,
+        nodeDistance: 90,
       },
       minVelocity: 0.75,
       solver: "repulsion",

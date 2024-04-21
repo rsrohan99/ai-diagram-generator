@@ -18,7 +18,7 @@ export default function DiagramSection() {
     // console.log("data");
     // console.log(data);
     if (data && data.length > 0) {
-      setDiagram(data[data.length - 1] as Diagram);
+      setDiagram(data[data.length - 1] as unknown as Diagram);
     }
   }, [data]);
 
