@@ -1,11 +1,9 @@
-import Header from "@/app/components/header";
-import ChatSection from "./components/chat-section";
+import DiagramSection from "./components/diagram-section";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center gap-10 p-24 background-gradient">
-      <Header />
-      <ChatSection />
+    <main className="p-12 background-gradient">
+      <DiagramSection />
     </main>
   );
 }
