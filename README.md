@@ -1,5 +1,7 @@
 In this tutorial, we'll see how to use LlamaIndex Pydantic Program mode and partial object parsing to send intermediate pydantic objects from incomplete JSONs to the frontend for an intuitive user experience.
 
+![diagram](https://github.com/rsrohan99/ai-diagram-generator/assets/62835870/6e562383-eba2-4770-8c84-b8d0603d5ca1)
+
 We use LlamaIndex Pydantic Program mode for structured output generation and we use partial object parsing to send intermediate objects that are validated using Pydantic models to the frontend.
 
 ## Getting Started
