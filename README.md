@@ -13,9 +13,8 @@ Click the above thumbnail for the detailed video tutorial.
 First clone the repo:
 
 ```bash
-git clone https://github.com/rsrohan99/rag-stream-intermediate-events-tutorial.git
-
-cd rag-stream-intermediate-events-tutorial
+git clone https://github.com/rsrohan99/ai-diagram-generator.git
+cd ai-diagram-generator
 ```
 
 ## Start the Backend
