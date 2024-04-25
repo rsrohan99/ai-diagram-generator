@@ -2,8 +2,8 @@ import json
 from pydantic import BaseModel 
 from fastapi.responses import StreamingResponse
 from fastapi import APIRouter, Request
+from llama_index.program.openai import OpenAIPydanticProgram
 
-from app.programs.partial import PartialPypanticProgram
 from app.scheme.diagram import Diagram
 
 chat_router = r = APIRouter()
@@ -22,7 +22,7 @@ async def chat(
     data: RequestData
 ):
     topic = data.prompt
-    diagram_program = PartialPypanticProgram.from_defaults(
+    diagram_program = OpenAIPydanticProgram.from_defaults(
         output_cls=Diagram,
         prompt_template_str=prompt_template_str,
         verbose=True
@@ -30,7 +30,7 @@ async def chat(
 
     # stream response
     async def event_generator():
-        for partial_diagram in diagram_program.stream_partial_object( topic=topic):
+        for partial_diagram in diagram_program.stream_partial_objects( topic=topic):
             if await request.is_disconnected():
                 break
             yield f"2:{json.dumps([partial_diagram.model_dump(by_alias=True)])}\n"
